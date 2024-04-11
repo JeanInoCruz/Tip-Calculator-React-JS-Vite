@@ -45,6 +45,7 @@ function App() {
           <TipPercentageButtons
             percentages={[5, 10, 15, 25, 50]}
             handleTipSelect={handleTipSelect}
+            activeButton={tipPercentage}
           />
           <PeopleInput people={people} setPeople={setPeople} />
         </div>
