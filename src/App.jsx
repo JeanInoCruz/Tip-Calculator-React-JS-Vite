@@ -9,21 +9,14 @@ import { TipPercentageButtons } from "./components/TipPercentageButtons/TipPerce
 import "./App.css";
 
 function App() {
-  // Estado para guardar el monto de la cuenta (bill)
+
   const [bill, setBill] = useState(0);
-
-  // Estado para guardar el porcentaje de propina seleccionado
   const [tipPercentage, setTipPercentage] = useState(0);
-
-  // Estado para guardar el número de personas
   const [people, setPeople] = useState(1);
-
-  // Función para manejar la selección de porcentaje de propina
   const handleTipSelect = (percentage) => {
-    setTipPercentage(parseFloat(percentage));
+    setTipPercentage(parseInt(percentage));
   };
 
-  // Función para resetear los valores de los inputs
   const handleReset = () => {
     setBill(0);
     setTipPercentage(0);
